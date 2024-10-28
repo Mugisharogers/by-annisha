@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Card</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ffcccb, #ffb6c1);
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+        .card {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            height: 450px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+        }
+        img {
+            width: 80px;
+            border-radius: 50%;
+            position: absolute;
+        }
+        #annett {
+            top: 20px;
+            left: 20px;
+        }
+        #rogers {
+            bottom: 20px;
+            right: 20px;
+        }
+        .happy-birthday {
+            font-size: 2em;
+            color: #ff69b4;
+            position: absolute;
+            white-space: nowrap;
+            animation: move 10s linear infinite;
+        }
+        @keyframes move {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(300px, 0); }
+            50% { transform: translate(300px, 200px); }
+            75% { transform: translate(0, 200px); }
+            100% { transform: translate(0, 0); }
+        }
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <img id="annett" src="1.jpg" alt="Annet">
+    <img id="rogers" src="i.jpg" alt="Rogers">
+    <div class="happy-birthday">Happy Birthday from ANNISHA!</div>
+    <audio id="young" src="" autoplay loop>play</audio>
+    <video src="4.mp4" controls></video>
+   
+</div>
+
+<script>
+// Play audio when the card is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        const audio = document.getElementById('young.mp3');
+        audio.volume = 0.7; // Adjust volume (0.0 to 1.0)
+    });
+</script>
+
+</body>
+
+</html>
