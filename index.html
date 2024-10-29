@@ -6,6 +6,7 @@
     <title>Happy Birthday Card</title>
     <style>
         body {
+             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -16,34 +17,21 @@
         }
         .card {
             position: relative;
-            width: 90px;
+            width: 100%;
             max-width: 600px;
-            border-radius: 8px;
+            height: 450px;
+            border-radius: 15px;
+             overflow: hidden;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
             text-align: center;
             background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
-
-    margin: 20px auto; 
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
-  display: flex;
-    flex-direction: column;
-
-
-            
         }
         img {
             width: 80px;
             border-radius: 50%;
             position: absolute;
         }
-    .good-video{
-        width: 100%;    
-    height: auto;   
-    margin: 10px 0
-    }
         #annett {
             top: 20px;
             left: 20px;
@@ -76,9 +64,9 @@
 <div class="card">
     <img id="annett" src="1.jpg" alt="Annet">
     <img id="rogers" src="i.jpg" alt="Rogers">
-    <div class="happy-birthday">Happy Birthday from ANNISHA!</div>
+    <div class="happy-birthday">HBD from ANNISHA!</div>
     
-    <video src="4.mp4" controls class="good-video"></video>
+    <video src="4.mp4" controls></video>
    
 </div>
 
